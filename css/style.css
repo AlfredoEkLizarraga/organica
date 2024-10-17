@@ -1,0 +1,123 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --gray : #f3f3f3;
+    --green: #6cb500;
+    --greenMenu: #f3f3f3;
+    --black: #000;
+    --white: #FFF;
+
+    --font: "Open Sans", sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+a,img{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: min(90%, 120rem);
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.header__img,
+.footer__logo{width: 18rem;}
+.nav__list{
+    list-style-type: none;
+    display: flex;
+}
+.nav__link{
+    color: var(--black);
+    font-family: var(--font);
+}
+.nav__li:not(:last-child){margin-right: 3rem;}
+.nav__link:hover{color: var(--green);}
+.menu-icon{
+    display: none;
+}
+.banner{
+    position: relative;
+    background-image: url('../img/foto_slide.jpg');
+    min-height: 40rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58rem;
+}
+.banner__text h1{
+    color: var(--white);
+    padding: 1rem;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 4rem;
+}
+.service-cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.card{
+    background-color: var(--greenMenu);
+    width: 35rem;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {transform: translateY(-10px);}
+.card__icon{width: 15rem;}
+.card__title{
+    color: var(--green);
+    font-family: var(--font);
+    font-weight: 400;
+}
+.card__description{
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.service-text,
+.service-span{
+    font-family: var(--font);
+    text-align: center;
+}
+.service-text{
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.service-span{
+    color: var(--green);
+    margin-bottom: 3rem;
+}
+.footer-bg{
+    background-color: var(--green);
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 5rem;
+}

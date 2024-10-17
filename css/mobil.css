@@ -1,0 +1,50 @@
+:root{
+    --gray : #f3f3f3;
+    --green: #6cb500;
+    --greenMenu: #f3f3f3;
+    --black: #000;
+    --white: #FFF;
+
+    --font: "Open Sans", sans-serif;
+}
+@media (max-width: 768px) {
+   .menu-icon{
+    display: block;
+   }
+   .nav__list{
+    display: block;
+   }
+   .header{
+    position: relative;
+   }
+   .nav {
+    display: none;
+     position: absolute;
+     top: 100%;
+     z-index: 4;
+     right: 0;
+     background-color: var(--greenMenu);
+     width: 100%;
+     padding: 1rem;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav__li{
+        border-bottom: 1px dashed var(--black);
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .banner__text{width: 90%;}
+    .banner__text h1{
+        font-size: 3rem;
+    }
+    .service-cards{flex-direction: column;}
+    .card{
+        width: 100%;
+    }
+    .menu-icon i{
+        color: var(--green);
+        font-size: 3.1rem;
+    }
+    .header__img,
+    .footer__logo{width: 13rem;}
+}
